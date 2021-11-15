@@ -24,8 +24,10 @@ if Post.count == 0
       author = User.first
       Post.create(
           author: author, 
-          title: Faker::Lorem.words(number: 3).join(" "),
-          content: Faker::Lorem.paragraph_by_chars(number: 2000, supplemental: false),
+          title: Faker::Company.name,
+          # title: "test",
+          content: Faker::Company.catch_phrase,
+          # content: "Testing testy test",
           category_id: rand(5) + 1
       )
   end
