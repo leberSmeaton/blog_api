@@ -14,7 +14,7 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
-
+  # to catch use cases we before and after :all incase hooks need to clean up anything
   config.before(:all) do
     DatabaseCleaner.start
   end

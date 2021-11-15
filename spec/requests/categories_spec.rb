@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Categories", type: :request do
   describe "GET /categories" do
-    before(:all) do
+    before(:each) do
       create(:category)
     end
     
@@ -23,7 +23,7 @@ RSpec.describe "Categories", type: :request do
     end
 
     # it "should include code" do
-      # expect(response.body)
+      # expect(response.body).to include("code")
     # end
   end
 end

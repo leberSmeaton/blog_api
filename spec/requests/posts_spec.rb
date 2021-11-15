@@ -32,6 +32,7 @@ RSpec.describe "Posts", type: :request do
   describe "GET /posts/:id" do
 
     context "valid post id" do
+      
       before(:each) do 
         get "/posts/1"
       end
@@ -54,6 +55,7 @@ RSpec.describe "Posts", type: :request do
     end
 
     context "invalid post id" do
+
       before(:each) do 
         get "/posts/2"
       end
