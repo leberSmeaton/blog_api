@@ -37,6 +37,7 @@ group :development, :test do
   # https://avdi.codes/configuring-database_cleaner-with-rails-rspec-capybara-and-selenium/
   gem 'rails-controller-testing'
   gem 'shoulda-matchers'
+  gem 'faker'
 end
 
 group :development do

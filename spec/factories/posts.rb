@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :post do
-    title { "MyString" }
-    content { "MyText" }
-    user { nil }
-    category { nil }
+    association :author, factory: :user
+    association :category
+    title { "Factories are awesome" }
+    content { "FactoryBot saves me time" }
   end
 end
