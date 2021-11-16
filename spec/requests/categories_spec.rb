@@ -1,7 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe "Categories", type: :request do
+
   describe "GET /categories" do
+  
     before(:each) do
       create(:category)
     end
@@ -21,9 +23,6 @@ RSpec.describe "Categories", type: :request do
     it "should include my default factory category Awesome Category" do
       expect(response.body).to include("Awesome Category")
     end
-
-    # it "should include code" do
-      # expect(response.body).to include("code")
-    # end
+    
   end
 end
